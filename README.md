@@ -3,10 +3,10 @@ Automatic build nginx 64-bit binaries for Windows.
 
 Prerequirements:
 1. Windows x64 (tested on Windows 10 Enterprise LTSC 2019)
-2. Visual Studio 2019
-3. MSYS2 x64
-4. NASM x64
-5. Strawberry Perl x64
+2. Visual Studio Community [https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=16]
+3. MSYS2 x64 [http://repo.msys2.org/distrib/x86_64/msys2-x86_64-20190524.exe]
+4. NASM x64 [https://www.nasm.us/pub/nasm/releasebuilds/2.14.02/win64/nasm-2.14.02-installer-x64.exe]
+5. Strawberry Perl x64 [http://strawberryperl.com/download/5.30.1.1/strawberry-perl-5.30.1.1-64bit.msi]
 
 Building from source:
 1. Put all files in C:\msys64\home\%username%\

@@ -2,15 +2,15 @@
 # nginx-win64-builder
 Automatic build nginx 64-bit binaries for Windows.
 
-### Descriptions:
+### Description:
 This scripts let you build 64-bit Windows binaries of the latest nginx and openssl release under Windows.
 Currently uses this sources:
-- nginx 1.17.9
-- ngx-fancyindex 0.4.4
-  - modified fancyindex theme from %author%
-- openssl 1.1.1d
-- zlib 1.2.11
-- pcre 8.44
+- [nginx](https://nginx.org/) 1.17.9
+- [ngx-fancyindex](https://github.com/aperezdc/ngx-fancyindex) 0.4.4
+- modified [nginx-fancyindex-minimal](https://github.com/drklee3/Nginx-Fancyindex-Minimal) theme
+- [openssl](https://www.openssl.org/) 1.1.1d
+- [zlib](https://www.zlib.net/) 1.2.11
+- [pcre](https://www.pcre.org/) 8.44
 
 Also for example creates `user1` with password `1234567890` for `ngx_http_auth_basic_module`.
 

@@ -10,7 +10,7 @@ Prerequirements:
 
 Building from source:
 1. Put all files in C:\msys64\home\%username%\
-2. Run msys2.exe from C:\msys64\ type 'sh script1.sh' and press Enter
+2. Run msys2.exe from C:\msys64\ type `sh script1.sh` and press Enter
 3. Run script2.bat {TODO}
-4. Run 'sh script3.sh' in msys2.exe
+4. Run `sh script3.sh` in msys2.exe
 5. Done.

@@ -9,9 +9,10 @@ Prerequirements:
 - [NASM 64-bit](https://www.nasm.us/pub/nasm/releasebuilds/2.14.02/win64/nasm-2.14.02-installer-x64.exe)
 - [Strawberry Perl 64-bit](http://strawberryperl.com/download/5.30.1.1/strawberry-perl-5.30.1.1-64bit.msi)
 
-Building from source:
-1. Put all files in `C:\msys64\home\%username%\`
-2. Run `msys2.exe` from `C:\msys64\` type `sh script1.sh` and press Enter
-3. Run `script2.bat` **TODO**
-4. Run `sh script3.sh` in `msys2.exe`
-5. Done.
+Compile nginx from source:
+1. Download latest version of nginx-win64-installer from [**here**](https://github.com/cyberunknown/nginx-win64-builder/archive/master.zip)
+2. Put all files from zip in `C:\msys64\home\%username%\`;
+3. Run `msys2.exe` from `C:\msys64\` type `sh script1.sh` and press Enter;
+4. Run `script2.bat` **TODO**;
+5. Run `sh script3.sh` in `msys2.exe`;
+6. Grab your freshly compiled nginx from `C:\msys64\home\%username%\`.

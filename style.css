@@ -1,0 +1,35 @@
+body {
+  background: #fff;
+  color: #50596c;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+	font-weight: 300;
+}
+
+a {
+	color: #727e96;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #5764c6;
+}
+
+#list {
+	border: none;
+	width: 100%;
+}
+
+th {
+	background: none;
+	padding: 10px 0px 10px 0px;
+}
+
+tr.e {
+	background-color: #f8f9fa;
+}

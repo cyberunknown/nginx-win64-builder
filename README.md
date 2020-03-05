@@ -25,7 +25,7 @@ Also for example creates `user1` with password `1234567890` for `ngx_http_auth_b
 
 
 ### Compile nginx from source:
-1. Download latest version of nginx-win64-installer from [**here**](https://github.com/cyberunknown/nginx-win64-builder/archive/master.zip)
+1. Download latest version of scripts from [**here**](https://github.com/cyberunknown/nginx-win64-builder/releases)
 2. Put all files from zip in `C:\msys64\home\%username%\`;
 3. Run `msys2.exe` from `C:\msys64\` type `sh script1.sh` and press Enter;
 4. Run `script2.bat` **TODO**;

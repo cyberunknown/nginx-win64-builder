@@ -1,3 +1,4 @@
+![](https://github.com/cyberunknown/nginx-win64-builder/blob/master/nginx.png)
 # nginx-win64-builder
 Automatic build nginx 64-bit binaries for Windows.
 
@@ -29,4 +30,4 @@ Also for example creates `user1` with password `1234567890` for `ngx_http_auth_b
 3. Run `msys2.exe` from `C:\msys64\` type `sh script1.sh` and press Enter;
 4. Run `script2.bat` **TODO**;
 5. Run `sh script3.sh` in `msys2.exe`;
-6. Grab your freshly compiled nginx from `C:\msys64\home\%username%\`.
+6. Grab your freshly compiled nginx from `C:\msys64\home\%username%\` and fancyindex theme.

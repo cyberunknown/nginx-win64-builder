@@ -1,4 +1,4 @@
-wget https://github.com/nginx/nginx/archive/release-1.17.9.tar.gz https://github.com/aperezdc/ngx-fancyindex/archive/v0.4.4.tar.gz https://www.openssl.org/source/openssl-1.1.1d.tar.gz https://github.com/madler/zlib/archive/v1.2.11.tar.gz https://ftp.pcre.org/pub/pcre/pcre-8.44.tar.gz
+wget https://github.com/nginx/nginx/archive/release-1.17.9.tar.gz https://github.com/aperezdc/ngx-fancyindex/archive/v0.4.4.tar.gz https://github.com/openssl/openssl/archive/OpenSSL_1_1_1d.tar.gz https://github.com/madler/zlib/archive/v1.2.11.tar.gz https://ftp.pcre.org/pub/pcre/pcre-8.44.tar.gz
 for i in `ls *.gz` ; do tar -xvzf $i ; done
 rm *.gz
 mv nginx-release-*/ nginx/

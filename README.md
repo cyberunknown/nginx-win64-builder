@@ -4,7 +4,7 @@
 ### Description:
 This scripts let you build 64-bit Windows binaries of the latest nginx and openssl release under Windows.
 
-Currently uses this sources:
+Currently uses:
 - [nginx](https://nginx.org/) 1.17.9
 - [ngx-fancyindex](https://github.com/aperezdc/ngx-fancyindex) 0.4.4
 - modified [nginx-fancyindex-minimal](https://github.com/drklee3/Nginx-Fancyindex-Minimal) theme
@@ -12,7 +12,7 @@ Currently uses this sources:
 - [zlib](https://www.zlib.net/) 1.2.11
 - [pcre](https://www.pcre.org/) 8.44
 
-Also for example creates `user1` with password `1234567890` for `ngx_http_auth_basic_module`.
+Creates `user1` with password `1234567890` for `ngx_http_auth_basic_module`.
 
 
 ### Prerequirements:
@@ -23,10 +23,9 @@ Also for example creates `user1` with password `1234567890` for `ngx_http_auth_b
 - Install [Strawberry Perl 64-bit](http://strawberryperl.com/download/5.30.1.1/strawberry-perl-5.30.1.1-64bit.msi)
 
 
-### Compile nginx from source:
+### Compile nginx from sources:
 1. Download latest version of scripts from [**here**](https://github.com/cyberunknown/nginx-win64-builder/releases)
-2. Unzip to `C:\msys64\home\%username%\`
-3. Run `msys2.exe` from `C:\msys64\` type `sh script1.sh` and press Enter
-4. Run `script2.bat`
-5. Run `sh script3.sh` in `msys2.exe`
-6. Grab your freshly compiled nginx with openssl and fancyindex theme from `C:\msys64\home\%username%\`
+2. Put files from archive to `C:\msys64\home\%username%\`
+3. Double click on compile.bat and wait until MSYS shell window is closed
+4. Press any key to continue and wait until all shell windows is closed
+5. Grab your freshly compiled nginx with openssl and fancyindex theme from `C:\msys64\home\%username%\`

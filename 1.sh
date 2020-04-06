@@ -12,7 +12,7 @@ sed -i 's/32/64A/g' auto/lib/openssl/makefile.msvc
 sed -i 's/do_ms.bat/do_win64a.bat/g' auto/lib/openssl/makefile.msvc
 sed -i 's/do_ms/do_win64a/g' auto/lib/openssl/makefile.msvc
 sed -i 's/W4/W3/g' auto/cc/msvc
-sed -i '14a NGX_MSVC_VER=19.25.28610.4' auto/cc/msvc
+sed -i '14a NGX_MSVC_VER=19.25.28612' auto/cc/msvc
 sed -i '14d' auto/cc/msvc
 sed -i '15d' auto/cc/msvc
 auto/configure \

@@ -18,7 +18,7 @@ Currently uses:
   - Press `Install`.
 - Install [MSYS2 64-bit](http://repo.msys2.org/distrib/x86_64/msys2-x86_64-20190524.exe);
 - Install [NASM 64-bit](https://www.nasm.us/pub/nasm/releasebuilds/2.14.02/win64/nasm-2.14.02-installer-x64.exe);
-- Install [Strawberry Perl 64-bit](http://strawberryperl.com/download/5.30.2.1/strawberry-perl-5.30.2.1-64bit.msi);
+- Install [Strawberry Perl 64-bit](http://strawberryperl.com/download/5.30.2.1/strawberry-perl-5.30.2.1-64bit.msi).
 
 
 ### Compile nginx from sources:

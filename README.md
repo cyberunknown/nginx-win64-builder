@@ -1,12 +1,12 @@
 ![](https://github.com/cyberunknown/nginx-win64-builder/blob/master/nginx.png)
 # nginx-win64-builder
-Automatic build 64-bit Windows binaries of the latest nginx and openssl releases. Also creates `user1` with password `1234567890` for `ngx_http_auth_basic_module`.
+Automatic build 64-bit Windows binaries of the latest nginx and openssl releases. For basic authentication use `user1:1234567890` or change it by editing 8 and 9 line in `2.sh` before compiling.
 
 Currently uses:
 - [nginx](https://nginx.org/) 1.17.9
 - [ngx-fancyindex](https://github.com/aperezdc/ngx-fancyindex) 0.4.4
-- modified [nginx-fancyindex-minimal](https://github.com/drklee3/Nginx-Fancyindex-Minimal) theme
-- [openssl](https://www.openssl.org/) 1.1.1d
+- [nginx-fancyindex-minimal](https://github.com/drklee3/Nginx-Fancyindex-Minimal) master
+- [openssl](https://www.openssl.org/) 1.1.1f
 - [zlib](https://www.zlib.net/) 1.2.11
 - [pcre](https://www.pcre.org/) 8.44
 
@@ -16,7 +16,7 @@ Currently uses:
 - Install [Visual Studio Community 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=16) with Visual C++ Compiler
 - Install [MSYS2 64-bit](http://repo.msys2.org/distrib/x86_64/msys2-x86_64-20190524.exe)
 - Install [NASM 64-bit](https://www.nasm.us/pub/nasm/releasebuilds/2.14.02/win64/nasm-2.14.02-installer-x64.exe)
-- Install [Strawberry Perl 64-bit](http://strawberryperl.com/download/5.30.1.1/strawberry-perl-5.30.1.1-64bit.msi)
+- Install [Strawberry Perl 64-bit](http://strawberryperl.com/download/5.30.2.1/strawberry-perl-5.30.2.1-64bit.msi)
 
 
 ### Compile nginx from sources:

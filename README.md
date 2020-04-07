@@ -1,4 +1,3 @@
-![](https://github.com/cyberunknown/nginx-win64-builder/blob/master/nginx.png)
 # nginx-win64-builder
 Automatic build 64-bit Windows binaries of the latest nginx and openssl releases. For basic authentication use `user1:1234567890` or change it by editing 8 and 9 line in `2.sh` before compiling.
 

@@ -9,3 +9,4 @@ openssl.exe passwd -apr1 1234567890 > conf/passwd
 sed -i 's/$apr1/user1:$apr1/g' conf/passwd
 rm ../*.{sh,bat,md}
 rm ../.wget-hsts
+rm -r ../Nginx-*

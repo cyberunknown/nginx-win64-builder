@@ -1,7 +1,7 @@
 mv *.conf nginx/conf/
 cd nginx
 mv objs/nginx.exe ./
-mv objs/lib/openssl/openssl/bin/openssl.exe ./
+mv objs/lib/openssl-*/openssl/bin/openssl.exe ./
 mkdir {logs,temp}
 rm -r {auto,contrib,docs,misc,objs,src}
 rm {.hgtags,Makefile}

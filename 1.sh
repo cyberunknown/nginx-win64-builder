@@ -46,6 +46,5 @@ auto/configure \
     --with-http_v2_module \
     --with-stream \
     --with-stream_ssl_module \
-    --with-ipv6 \
     --add-module=objs/lib/ngx-fancyindex-${fancyindex_latest}
 sed -i '1529,1533 d' objs/Makefile

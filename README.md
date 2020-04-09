@@ -1,13 +1,13 @@
 # nginx-win64-builder
 Automatic build 64-bit Windows binaries of the latest nginx and openssl releases. For basic authentication use `user1:1234567890` or change it by editing 8 and 9 line in `2.sh` before compiling.
 
-Currently uses:
-- [nginx](https://nginx.org/) 1.17.9
-- [ngx-fancyindex](https://github.com/aperezdc/ngx-fancyindex) 0.4.4
-- [nginx-fancyindex-minimal](https://github.com/drklee3/Nginx-Fancyindex-Minimal) master
-- [openssl](https://www.openssl.org/) 1.1.1f
-- [zlib](https://www.zlib.net/) 1.2.11
-- [pcre](https://www.pcre.org/) 8.44
+### Used software:
+- [nginx](https://nginx.org/) latest release
+- [ngx-fancyindex](https://github.com/aperezdc/ngx-fancyindex) latest release
+- [nginx-fancyindex-minimal](https://github.com/drklee3/Nginx-Fancyindex-Minimal) master branch
+- [openssl](https://www.openssl.org/) latest release
+- [zlib](https://www.zlib.net/) latest release
+- [pcre](https://www.pcre.org/) latest release
 
 
 ### Prerequirements:

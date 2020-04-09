@@ -35,7 +35,7 @@ auto/configure \
     --with-pcre=objs/lib/pcre \
     --with-zlib=objs/lib/zlib \
     --with-openssl=objs/lib/openssl \
-    --with-openssl-opt="no-tests" \
+    --with-openssl-opt='no-tests' \
     --with-http_addition_module \
     --with-http_ssl_module \
     --with-http_v2_module \

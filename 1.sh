@@ -1,14 +1,19 @@
-wget https://github.com/nginx/nginx/archive/release-1.17.9.tar.gz https://github.com/aperezdc/ngx-fancyindex/archive/v0.4.4.tar.gz https://github.com/drklee3/Nginx-Fancyindex-Minimal/archive/master.tar.gz https://github.com/openssl/openssl/archive/OpenSSL_1_1_1f.tar.gz https://github.com/madler/zlib/archive/v1.2.11.tar.gz https://ftp.pcre.org/pub/pcre/pcre-8.44.tar.gz
+nginx_latest=`wget -O- https://nginx.org/en/download.html | egrep -o 'nginx-[0-9\.]+.tar.gz' | sort -V | tail -1 | sed -nre 's/^[^0-9]*(([0-9]+\.)*[0-9]+).*/\1/p'`
+fancyindex_latest=`wget -O- https://github.com/aperezdc/ngx-fancyindex/releases/latest | egrep -o 'v[0-9\.]+.tar.gz' | sort -V | tail -1 | sed -nre 's/^[^0-9]*(([0-9]+\.)*[0-9]+).*/\1/p'`
+openssl_latest=`wget -O- https://www.openssl.org/source/ | egrep -o 'openssl-[A-Za-z0-9\.]+.tar.gz' | sort -V | tail -1 | sed -nre 's|^[^0-9]*(([0-9]+\.)*[A-Za-z0-9]+).*|\1|p'`
+zlib_latest=`wget -O- https://github.com/madler/zlib/releases | egrep -o 'v[0-9\.]+.tar.gz' | sort -V | tail -1 | sed -nre 's/^[^0-9]*(([0-9]+\.)*[0-9]+).*/\1/p'`
+pcre_latest=`wget -O- https://ftp.pcre.org/pub/pcre/ | egrep -o 'pcre-[0-9\.]+.tar.gz' | sort -V | tail -1 | sed -nre 's/^[^0-9]*(([0-9]+\.)*[0-9]+).*/\1/p'`
+wget https://nginx.org/download/nginx-${nginx_latest}.tar.gz https://github.com/aperezdc/ngx-fancyindex/archive/v${fancyindex_latest}.tar.gz https://github.com/drklee3/Nginx-Fancyindex-Minimal/archive/master.tar.gz https://www.openssl.org/source/openssl-${openssl_latest}.tar.gz https://github.com/madler/zlib/archive/v${zlib_latest}.tar.gz https://ftp.pcre.org/pub/pcre/pcre-${pcre_latest}.tar.gz
 for i in `ls *.gz` ; do tar -xvzf $i ; done
 rm *.gz
 mv Nginx-Fancyindex-Minimal-*/fancyindex/ fancyindex/
 rm fancyindex/footer.*
 mv nginx-release-*/ nginx/
 mkdir -p nginx/objs/lib/
-mv openssl-*/ nginx/objs/lib/openssl/
-mv zlib-*/ nginx/objs/lib/zlib/
-mv pcre-*/ nginx/objs/lib/pcre/
-mv ngx-fancyindex-*/ nginx/objs/lib/ngx-fancyindex/
+mv openssl-*/ nginx/objs/lib/openssl-${openssl_latest}/
+mv zlib-*/ nginx/objs/lib/zlib-${zlib_latest}/
+mv pcre-*/ nginx/objs/lib/pcre-${pcre_latest}/
+mv ngx-fancyindex-*/ nginx/objs/lib/ngx-fancyindex-${fancyindex_latest}/
 cd nginx
 sed -i 's/32/64A/g' auto/lib/openssl/makefile.msvc
 sed -i 's/do_ms.bat/do_win64a.bat/g' auto/lib/openssl/makefile.msvc
@@ -32,9 +37,9 @@ auto/configure \
     --http-scgi-temp-path=temp/scgi_temp \
     --http-uwsgi-temp-path=temp/uwsgi_temp \
     --with-cc-opt=-DFD_SETSIZE=1024 \
-    --with-pcre=objs/lib/pcre \
-    --with-zlib=objs/lib/zlib \
-    --with-openssl=objs/lib/openssl \
+    --with-pcre=objs/lib/pcre-${pcre_latest} \
+    --with-zlib=objs/lib/zlib-${zlib_latest} \
+    --with-openssl=objs/lib/openssl-${openssl_latest} \
     --with-openssl-opt=no-tests \
     --with-http_addition_module \
     --with-http_ssl_module \
@@ -42,5 +47,5 @@ auto/configure \
     --with-stream \
     --with-stream_ssl_module \
     --with-ipv6 \
-    --add-module=objs/lib/ngx-fancyindex
+    --add-module=objs/lib/ngx-fancyindex-${fancyindex_latest}
 sed -i '1529,1533 d' objs/Makefile

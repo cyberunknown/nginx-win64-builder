@@ -19,7 +19,7 @@ Automatic build 64-bit Windows binaries of the latest nginx and openssl releases
 
 
 ### Compile nginx from sources:
-1. Download latest version of scripts from [**here**](https://github.com/cyberunknown/nginx-win64-builder/releases);
+1. [Download](https://github.com/cyberunknown/nginx-win64-builder/releases/latest) latest version of scripts;
 2. Put files from archive to `C:\msys64\home\%username%\`;
 3. Double click on `compile.bat` and wait until msys2 shell window are closed;
 4. Press any key to continue and wait until all shell windows are closed;

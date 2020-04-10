@@ -11,11 +11,11 @@ Automatic build 64-bit Windows binaries of the latest nginx and openssl releases
 
 
 ### Prerequirements:
-- Windows 10 x64;
-- [Visual Studio Build Tools 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16) with Visual C++ build tools;
-- [msys2 x64](https://www.msys2.org/);
-- [nasm x64](https://www.nasm.us/);
-- [strawberry perl x64](http://strawberryperl.com/).
+- Windows 10 x64
+- [Visual Studio Build Tools 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16) with Visual C++ build tools
+- [msys2 x64](https://www.msys2.org/)
+- [nasm x64](https://www.nasm.us/)
+- [strawberry perl x64](http://strawberryperl.com/)
 
 
 ### Compile nginx from sources:

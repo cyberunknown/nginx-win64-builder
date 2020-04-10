@@ -11,16 +11,16 @@ Automatic build 64-bit Windows binaries of the latest nginx and openssl releases
 
 
 ### Prerequirements:
-- Windows 10 64-bit;
-- Download and install [Visual Studio Build Tools 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16) with Visual C++ build tools;
-- Download and install [MSYS2 64-bit](https://www.msys2.org/);
-- Install [NASM 64-bit](https://www.nasm.us/);
-- Install [Strawberry Perl 64-bit](http://strawberryperl.com/).
+- Windows 10 x64;
+- [Visual Studio Build Tools 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16) with Visual C++ build tools;
+- [msys2 x64](https://www.msys2.org/);
+- [nasm x64](https://www.nasm.us/);
+- [strawberry perl x64](http://strawberryperl.com/).
 
 
 ### Compile nginx from sources:
 1. Download latest version of scripts from [**here**](https://github.com/cyberunknown/nginx-win64-builder/releases);
 2. Put files from archive to `C:\msys64\home\%username%\`;
-3. Double click on `compile.bat` and wait until MSYS2 shell window are closed;
+3. Double click on `compile.bat` and wait until msys2 shell window are closed;
 4. Press any key to continue and wait until all shell windows are closed;
 5. Grab your freshly compiled nginx with openssl and fancyindex theme from `C:\msys64\home\%username%\`.

@@ -1,4 +1,4 @@
-cl_version=`cat cl | grep -E '^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$'`
+cl_version=`cat ../cl | grep -E '^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$'`
 nginx_latest=`wget -O- https://github.com/nginx/nginx/releases | grep -Eo 'release-[0-9\.]+.tar.gz' | sort -V | tail -1 | sed -nre 's/^[^0-9]*(([0-9]+\.)*[0-9]+).*/\1/p'`
 fancyindex_latest=`wget -O- https://github.com/aperezdc/ngx-fancyindex/releases | grep -Eo 'v[0-9\.]+.tar.gz' | sort -V | tail -1 | sed -nre 's/^[^0-9]*(([0-9]+\.)*[0-9]+).*/\1/p'`
 openssl_latest=`wget -O- https://www.openssl.org/source/ | grep -Eo 'openssl-[A-Za-z0-9\.]+.tar.gz' | sort -V | tail -1 | sed -nre 's|^[^0-9]*(([0-9]+\.)*[A-Za-z0-9]+).*|\1|p'`

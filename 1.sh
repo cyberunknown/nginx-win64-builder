@@ -1,10 +1,10 @@
 cl_version=`cat ../cl | grep -E '^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$'`
-nginx_latest=`wget -O- https://github.com/nginx/nginx/releases | grep -Eo 'release-[0-9\.]+.tar.gz' | sort -V | tail -1 | sed -nre 's/^[^0-9]*(([0-9]+\.)*[0-9]+).*/\1/p'`
+# nginx_latest=`wget -O- https://github.com/nginx/nginx/releases | grep -Eo 'release-[0-9\.]+.tar.gz' | sort -V | tail -1 | sed -nre 's/^[^0-9]*(([0-9]+\.)*[0-9]+).*/\1/p'`
 fancyindex_latest=`wget -O- https://github.com/aperezdc/ngx-fancyindex/releases | grep -Eo 'v[0-9\.]+.tar.gz' | sort -V | tail -1 | sed -nre 's/^[^0-9]*(([0-9]+\.)*[0-9]+).*/\1/p'`
 openssl_latest=`wget -O- https://www.openssl.org/source/ | grep -Eo 'openssl-[A-Za-z0-9\.]+.tar.gz' | sort -V | tail -1 | sed -nre 's|^[^0-9]*(([0-9]+\.)*[A-Za-z0-9]+).*|\1|p'`
 zlib_latest=`wget -O- https://github.com/madler/zlib/releases | grep -Eo 'v[0-9\.]+.tar.gz' | sort -V | tail -1 | sed -nre 's/^[^0-9]*(([0-9]+\.)*[0-9]+).*/\1/p'`
 pcre_latest=`wget -O- https://ftp.pcre.org/pub/pcre/ | grep -Eo 'pcre-[0-9\.]+.tar.gz' | sort -V | tail -1 | sed -nre 's/^[^0-9]*(([0-9]+\.)*[0-9]+).*/\1/p'`
-wget https://github.com/nginx/nginx/archive/release-${nginx_latest}.tar.gz https://github.com/aperezdc/ngx-fancyindex/archive/v${fancyindex_latest}.tar.gz https://github.com/drklee3/Nginx-Fancyindex-Minimal/archive/master.tar.gz https://www.openssl.org/source/openssl-${openssl_latest}.tar.gz https://github.com/madler/zlib/archive/v${zlib_latest}.tar.gz https://ftp.pcre.org/pub/pcre/pcre-${pcre_latest}.tar.gz
+wget https://github.com/nginx/nginx/archive/release-1.19.2.tar.gz https://github.com/aperezdc/ngx-fancyindex/archive/v${fancyindex_latest}.tar.gz https://github.com/drklee3/Nginx-Fancyindex-Minimal/archive/master.tar.gz https://www.openssl.org/source/openssl-${openssl_latest}.tar.gz https://github.com/madler/zlib/archive/v${zlib_latest}.tar.gz https://ftp.pcre.org/pub/pcre/pcre-${pcre_latest}.tar.gz
 for i in `ls *.gz` ; do tar -xvzf $i ; done
 rm *.gz
 mv Nginx-Fancyindex-Minimal-*/fancyindex/ fancyindex/

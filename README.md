@@ -2,7 +2,7 @@
 Automatic build 64-bit Windows binaries of the latest nginx and openssl releases. For basic authentication use `user1:1234567890` or change it by editing 8 and 9 line in `2.sh` before compiling.
 
 ### Used software:
-- [nginx](https://nginx.org/) latest release
+- [nginx](https://nginx.org/) 1.19.2
 - [ngx-fancyindex](https://github.com/aperezdc/ngx-fancyindex) latest release
 - [nginx-fancyindex-minimal](https://github.com/drklee3/Nginx-Fancyindex-Minimal) master branch
 - [openssl](https://www.openssl.org/) latest release
